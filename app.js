@@ -17,7 +17,7 @@ app.listen(process.env.PORT || 3000, () => {
 });
 
 app.get("/lotto", (req, res) => {
-  res.send(_.sortBy(_.sampleSize(_.range(1, 46), 6));
+  res.send(_.sortBy(_.sampleSize(_.range(1, 46), 6)));
 });
 
 /* app.get("/lotto", (req, res) => {
@@ -33,11 +33,11 @@ app.get("/lotto", (req, res) => {
   res.json({ result: lotto });
 }); */
 
-function sameNum(n) {
+/* function sameNum(n) {
   for (var i = 0; i < lotto.length; i++) {
     if (n === lotto[i]) {
       return true;
     }
   }
   return false;
-}
+} */
